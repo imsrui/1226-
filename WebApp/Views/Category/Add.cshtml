@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("CateAdd", "Category", FormMethod.Post))
+        {
+            
+
+            <div>
+                类别名称：@Html.TextBox("Title");
+            </div>
+            <div>
+                <button type="submit">提交</button>
+                <button type="reset">重置</button>
+            </div>
+        }
+    </div>
+</body>
+</html>
